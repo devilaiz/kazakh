@@ -1,0 +1,69 @@
+  <!DOCTYPE html>
+  <html lang="kk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <title>Электронды оқулық — Қазақ тілі</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-steppe">
+    <div class="page-wrapper">
+      
+    <header>
+    <div class="header-container">
+      <!-- Левая часть -->
+      <div class="header-left">
+        <img src="imgs/logo.jpeg" alt="Логотип колледжа" class="logo">
+        <span class="college-name">Қостанай Политехникалық Жоғары Колледжі</span>
+      </div>
+
+      <!-- Центр -->
+      <div class="header-center">
+        Электронды оқулық: Қазақ тілі
+      </div>
+
+      <!-- Правая часть -->
+      <nav class="header-right">
+        <a href="#" onclick="openQuests()">Түсінік хат</a>
+        <a href="#" onclick="openContents()">Мазмұны</a>
+        <a href="#" onclick="openIntroduction()">Кіріспе</a>
+        <a href="#" onclick="openLiterature()">Әдебиеттер</a>
+        <a href="#" onclick="openTest()">Тест</a>
+      </nav>
+    </div>
+  </header>
+
+
+      <main>
+        <!-- Басты бет -->
+        <div class="container" id="values-page"> 
+    <div class="values">
+      <!-- карточки рендерятся из lessons.js -->
+    </div>
+  </div>
+
+
+        <!-- Урок -->
+        <div class="container" id="lesson-content" style="display:none;">
+          <h2 id="lesson-title">Сабақ</h2>
+          <div id="lesson-text"></div>
+          <button class="back-btn" onclick="goBack()">⬅ Артқа</button>
+        </div>
+
+        <!-- Список литературы -->
+        <div class="container" id="literature-content" style="display:none;">
+          <h2>Пайдаланылған әдебиеттер</h2>
+          <div id="literature-text"></div>
+          <button class="back-btn" onclick="goBack()">⬅ Артқа</button>
+        </div>
+      </main>
+
+      <footer>
+        Дайындаған: Бейсенова Х.Б.
+      </footer>
+    </div>
+
+    <script src="./lessons.js"></script>
+  </body>
+  </html>
